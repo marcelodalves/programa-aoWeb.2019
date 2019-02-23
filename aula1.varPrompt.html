@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+<title>Aula 1  Javascript</title>
+<meta charset="UTF-8">
+<script>
+alert("ola rapaziada\n"+Date());//comentario de uma linha
+					   /*comentario com 
+					   mais de uma linha */
+					   
+					   // + para chamar funçao, pra concatenar uma e para somar. ex: Date()
+					   //tipos de variaveis: string, number e boolean
+					   //pode declarar como var exemplo="thereza", var_exemplo="thereza" ou var$exemplo="thereza"
+document.write("<font color=#FF00FF size=10>olawiea</font><br>"+Date());
+var $nome="Marcelo\n";
+var $email="marcelo.alves@soulasalle.com\n";
+var $idade="20\n";
+
+alert($nome + $idade + $email);
+document.write("<br>"+ "Nome:"+ $nome + "<br>" + "Idade:"+ $idade +"<br>" + "Email:"+ $email);
+
+var $nome1;
+alert($nome1);
+
+var $nome2="\n The\u00A0reza";
+alert($nome2);
+document.write("<br>"+$nome2);
+
+//usando o comando prompt - esse cmd serve pro usuario preencher a caixa de alerta
+var $nomeprompt=prompt("Qual o seu nome irmao?");
+alert("Prazer em conhecê-lo "+ $nomeprompt);
+
+var $idadeprompt=prompt("Qual sua idade parceiro?");
+alert("Nossa\u00A0"+$nomeprompt +" Que jovem!");
+document.write("<br>Nossa!\n"+$nomeprompt +"\u00A0"+$idadeprompt);
+
+//Operadores aritiméticos: soma, subtração, multiplicação, divisão e resto da divisão
+//soma
+var $soma=10+5;
+alert("A soma dos numeros é:"+$soma);
+document.write("<br>A soma dos números é:"+$soma);
+
+var $soma1="10"+"5";
+alert("Dez dezenas mais 5 = "+$soma1);
+document.write("<br>Dez dezenas mais 5 ="+$soma1);
+
+//subtração
+var $subtraçao=10-5;
+alert("A subtraçao dos numeros é:" +$subtraçao);
+document.write("<br>A subtraçao dos numeros é = "+$subtraçao);
+
+//multiplicaçao
+var $mult=10*5;
+alert("A multiplicação dos numeros é = "+$mult);
+document. write("<br>A multiplicação dos numeros é = "+$mult);
+
+//divisão
+var $div=10/5;
+alert("A divisão dos numeros é = "+$div);
+document.write("<br>A divisão dos numeros é = "+$div);
+
+//resto da porcentagem
+var $resto=10%5;
+alert("O resto da divisão é = "+$resto);
+document.write("<br>O resto da divisão é = "+$resto);
+
+//outra maneira de resolver soma div sub etc
+
+alert("A soma dos numeros é\u00A0"+(10+5));
+document.write("<br>A soma dos numeros é\u00A0"+(10+5));
+
+alert("A subtraçao dos numeros é\u00A0"+(10-5));
+document.write("<br>A subtração dos numeros é\u00A0"+(10-5));
+
+alert("A divisão dos numeros é\u00A0"+(10/5));
+document.write("<br>A divisão dos numeros é\u00A0"+(10/5));
+
+alert ("A multiplicação dos numeros é\u00A0"+(10*5));
+document.write("<br>A multiplicação dos números é \u00A0"+(10*5));
+
+alert("O resto da divisao é\u00A0"+(10%5));
+document.write("<br>O resto da divisão dos numeros é\u00A0"+(10%5));
+
+//usando o parseInt - utiliza-se para o somatório
+
+var $n1=parseInt(prompt("Entre com o valor de n1"));
+var $n2=parseInt(prompt("Entre com o valor de n2"));
+var $nsoma=$n1+$n2;
+alert("A soma de n1+n2 é:\u00A0"+$nsoma);
+
+//para divisao, multiplicacao e etc, nao precisa do parseInt
+var $n3=prompt("Entre com o valor de n3:");
+var $n4=prompt("Entre com o valor de n4:");
+var $nsoma2=$n3*$n4;
+alert("A multiplicaçao de n3*n4 é:\u00A0"+$nsoma2);
+
+</script>
+</head>
+<body>
+<!-- comentario no html -->
+
+</body>
+</html>
