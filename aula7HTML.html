@@ -1,0 +1,74 @@
+</head>
+<body>
+<h1><center>Calculadora</center></h1>
+<center><input type="text" id="campinho" class="campinho" size=23 /></center>
+<center><table border=4 cellpadding=4 cellspacing=10></center>
+	<tr>
+		<td><input type="submit" class="botao" id="1" value="1" onclick="preencher('1');"></td></input>
+		<td><input type="submit" class="botao" id="2" value="2" onclick="preencher('2');"></td></input>
+		<td><input type="submit" class="botao" id="3" value="3" onclick="preencher('3');"></td></input>
+		<td><input type="submit" class="botao" id="/" value="/" onclick="preencher('/');"></td></input>
+	</tr>
+	<tr>
+		<td><input type="submit" class="botao" id="4" value="4" onclick="preencher('4');"></td></input>
+		<td><input type="submit" class="botao" id="5" value="5" onclick="preencher('5');"></td></input>
+		<td><input type="submit" class="botao" id="6" value="6" onclick="preencher('6');"></td></input>
+		<td><input type="submit" class="botao" id="*" value="*" onclick="preencher('*');"></td></input>
+	</tr>
+	<tr>
+		<td><input type="submit" class="botao" id="7" value="7" onclick="preencher('7');"></td></input>
+		<td><input type="submit" class="botao" id="8" value="8" onclick="preencher('8');"></td></input>
+		<td><input type="submit" class="botao" id="9" value="9" onclick="preencher('9');"></td></input>
+		<td><input type="submit" class="botao" id="+" value="+" onclick="preencher('+');"></td></input>
+	</tr>
+	<tr>
+		<td><input type="submit" class="botao" id="0" value="0" onclick="preencher('0');"></td></input>
+		<td><input type="submit" class="botao" id="=" value="=" onclick="calcular();"></td></input>
+		<td><input type="submit" class="botao" id="C" value="C" onclick="limpar();"></td></input>
+		<td><input type="submit" class="botao" id="-" value="-" onclick="preencher('-');"></td></input>
+	</tr>
+</table>
+<hr>
+<fieldset id="fieldsetIMC"><legend>Calculo do IMC</legend>
+<p>Quilo:<input type="text" id="quilo" name="quilo" placeholder="Entre com seu KG" /></p>
+<p>Altura:<input type="text" id="altura" name="altura" placeholder="Entre com sua Alura" /></p>
+<p><input type="submit" class="botao" value="Calcular" onclick="calcularIM();" /></p>
+<p>IMC:<input type="text" id="imc" name="imc" /></p>
+</fieldset>
+
+<table border="5">
+<tr>
+	<th>IMC</th>
+	<th>Classificação</th>
+</tr>
+<tr>
+	<td>18,5</td>
+	<td>Baixo Peso</td>
+</tr>
+<tr>
+	<td>18,5 - 24,9</td>
+	<td>Peso Normal</td>
+</tr>
+<tr>
+	<td>25</td>
+	<td>Sobrepeso</td>
+</tr>
+<tr>
+	<td>25 - 29,9</td>
+	<td>Pré-Obeso</td>
+</tr>
+<tr>
+	<td>30 - 34,9</td>
+	<td>Obeso I</td>
+</tr>
+<tr>
+	<td>35 - 39,9</td>
+	<td>Obeso II</td>
+</tr>
+<tr>
+	<td>40</td>
+	<td>Obeso III</td>
+</table>
+
+</body>
+</html>
