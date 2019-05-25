@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Aula 8</title>
+<meta charset="UTF-8">
+<script src="aula8.js"></script>
+</head>
+<body>
+<h1 onclick="changeText(this)">Clique no texto</h1>
+<button onclick="displayDate()">Data</button>
+<p id="demo" />
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" style="background-color:#FF0022; width:120px; height:20px; padding:40px;" >Passe o cursor aqui</div><br>
+<div onmousedown="mDown(this)" onmouseup="mUp(this)" style="background-color:#4B25C6; width:120px; height:20px; padding:40px;" > Clique e segure:</div><br>
+
+<hr />
+<form method="Post" action="aula8.php">
+<legend>Cadastro</legend>
+<input type="button" value="Digitar nome" onclick="nome=prompt('Seu nome:','')" />
+<input type="button" value="Digitar email" onclick="email=prompt('email:','')" />
+<input type="button" value="Cadastrar" onclick="escrever(this.form.Area)" />
+<p><textarea rows=10 cols=40 name="Area"></textarea>
+</form>
+
+
+<hr />
+<pre>
+<a href onmouseover="mudaCor('blue')">Azul</a>
+<a href onmouseover="mudaCor('red')">Vermelho</a>
+<a href onmouseover="mudaCor('green')">Verde</a>
+<a href onmouseover="mudaCor('yellow')">Amarelo</a>
+<a href onmouseover="mudaCor('black')">Preto</a>
+</pre>
+
+<input type="radio" name="grupo" onclick="document.bgColor='blue'">Azul</input>
+<input type="radio" name="grupo" onclick="document.bgColor='red'">Vermelho</input>
+<input type="radio" name="grupo" onclick="document.bgColor='green'">Verde</input>
+<input type="radio" name="grupo" onclick="document.bgColor='yellow'">Amarelo</input>
+<input type="radio" name="grupo" onclick="document.bgColor='black'">Preto</input>
+
+<!--Efetue um programa em JS que receba os valores A,B,C e D. Efutue a soma entre A e C, a multiplicação entre B e D e verifique se o 
+resultado da soma é maior, menor ou igual a multiplicação. (Dica: use o geElementById)-->
+
+</body>
+</html>
